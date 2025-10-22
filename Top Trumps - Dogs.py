@@ -72,16 +72,22 @@ while gamefinished == False:
         print("you can't win with this card")
     elif highestvalue == sizewin:
         print("you should choose Size")
+        print("your chance of winning is " +str(int(round((sizewin/29)*100,0))) + "%")
     elif highestvalue == raritywin:
         print("you should choose Rarity")
+        print("your chance of winning is " +str(int(round((raritywin/29)*100,0))) + "%")
     elif highestvalue == temperwin:
         print("you should choose Good Temper")
+        print("your chance of winning is " +str(int(round((temperwin/29)*100,0))) + "%")
     elif highestvalue == cutenesswin:
         print("you should choose Cuteness")
+        print("your chance of winning is " +str(int(round((cutenesswin/29)*100,0))) + "%")
     elif highestvalue == ttrwin:
         print("you should choose Top Trumps Rating")
+        print("your chance of winning is " +str(int(round((ttrwin/29)*100,0))) + "%")
     playagain = input("do you want to play again? (yes/no) ")
     if playagain == "no":
         gamefinished = True
+        print("thanks for playing!")
 
     
